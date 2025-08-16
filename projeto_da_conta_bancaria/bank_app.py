@@ -27,6 +27,7 @@ def deposito(valor):
 # Fazer a função de mostar o saldo
 def mostrar_saldo():
     print(f"Seu saldo atual é de: R$ {saldo:.2f}")
+
 # Fazer a função de extrato
 def extrato():
     x = open('operacoes_realizadas.txt', 'r')
