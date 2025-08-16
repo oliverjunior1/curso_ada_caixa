@@ -1,1 +1,7 @@
 #############SIMPLE-BANK#################
+deposito de R$ 50000.00: saldo de R$ 50000.00
+saque de R$ 100.00: saldo de R$ 49900.00
+saque de R$ 50.00: saldo de R$ 49850.00
+saque de R$ 180.00: saldo de R$ 49670.00
+saque de R$ 500.00: saldo de R$ 49170.00
+saque de R$ 4900.00: saldo de R$ 44270.00
