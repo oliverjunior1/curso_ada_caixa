@@ -102,3 +102,4 @@ while True:
         case _:
             print('Opção inválida.')
     input("\nPressione Enter para continuar...")
+
