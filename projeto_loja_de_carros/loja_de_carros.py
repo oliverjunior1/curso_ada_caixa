@@ -1,7 +1,14 @@
+# Grupo: Joaquim Rodrigues de Oliveira
+# Ingrid Sabrina
+# Kelly Oliveira
+# Tema do trabalho: Loja de Carros
+
 import os
+
 
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 # opções do funcionário
 def opcoes_funcionario():
@@ -16,6 +23,7 @@ def opcoes_funcionario():
                  "Digite (2) para comprar carro:\n"
                  "Digite (3) para ver os carros disponíveis:\n"
                  "Digite (4) para sair. Digite: ")
+
 
 # vender carro
 def vender_carro():
@@ -65,7 +73,6 @@ def vender_carro():
         print("Opção inválida. Nenhum carro foi comprado.")
 
 
-
 # comprar carro
 def comprar_carro():
     marca = input("Qual a marca do carro? ")
@@ -76,6 +83,7 @@ def comprar_carro():
         comprar.write(f"{marca} - {modelo} - {ano} - R${valor}\n")
     print("Carro comprado com sucesso.")
 
+
 # consultar carros disponíveis
 def consultar_carros():
     try:
@@ -84,6 +92,7 @@ def consultar_carros():
             print(consultar.read())
     except FileNotFoundError:
         print("Arquivo 'carros.txt' não encontrado.")
+
 
 # loop principal
 while True:
@@ -103,3 +112,10 @@ while True:
             print('Opção inválida.')
     input("\nPressione Enter para continuar...")
 
+#Para rodar o programa corretamente é preciso criar um arquivo chamado carros.txt na mesma pasta do arquivo.py
+#
+# com os seguintes dados:
+# Toyota - Corolla - 2020 - R$25000
+# Volkswagen - Polo - 2010 - R$12000
+# Ferrari - F8 Tributo - 2024 - R$180000
+# Fiat - Idea - 2020 - R$14000
